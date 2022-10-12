@@ -15,10 +15,18 @@
     </div>
   </div>
 </nav><br><div style="border: 2px solid black;margin-left: 250px;" class="col-4">
-<form id="f" >
+
   <label style="margin-left: 35px;">Add  Event name :</label><br>
-  <input type="text" id="t" style="margin-left: 5px;"><br>
-  <label style="margin-left: 35px;">Add  Event date :</label><br>
-  <input type="date" id="d" style="margin-left: 23px;"><br><br>
-  <button type="submit" style="margin-left: 58px;"> Submit</button>
-</form><br></div>
+  <input type="text" #t style="margin-left: 5px;"><br>
+  <!-- <label style="margin-left: 35px;">Add  Event date :</label><br>
+  <input type="date" #d style="margin-left: 23px;"><br><br> -->
+  <button type="submit" style="margin-left: 58px;" (click) ="fun(t.value)"> Submit</button>
+<br></div>
+<table id="ans">
+  <tr>
+    <th>Event name</th>
+  </tr>
+  <tr>
+     <td>{{s}}</td>
+  </tr>
+</table>
