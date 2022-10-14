@@ -14,11 +14,17 @@ export class AddComponent implements OnInit {
   j:any
   b:any[] =[]
           fun(t:any,d:any)
-         {                    
+         {             
+              if((t=='') && (d=='')) 
+              {
+
+              }  
+              else{ 
               this.h="Event Name"
               this.j="Date"
               this.a.push({t})
               this.b.push({d})
+              }
          }
          delete1(i:any){
           this.a.splice(i,1)
