@@ -22,10 +22,8 @@ export class AddComponent implements OnInit {
          }
          delete1(i:any){
           this.a.splice(i,1)
+          this.b.splice(i,1)
          } 
-
-  ngOnInit(): void {
-    
+  ngOnInit(): void {    
   }
-
 }
