@@ -10,10 +10,12 @@
   <br></div><br><br><br>
   <div id="q"><table id="ans" style="margin-left: 150px; width: 400px;">
     <tr>
+      <th>{{q}}</th>
       <th>{{h}}</th>
       <th>{{j}}</th>
     </tr>
     <tr *ngFor="let items of a, index as i" >
+      <td>{{i+1}}</td>
        <td>{{a[i].t}}</td>
        <td>{{b[i].d}}</td>
        <td><button type="submit" style=" background-color: rgb(112, 223, 149);" (click) ="delete1(i)"> Delete</button></td>
